@@ -17,10 +17,8 @@ export class Satellite {
 	isSpaceDebris(): boolean {
 		return true;
    }
-
-}
-shouldShowWarning(): boolean {
-	return this.type.toUpperCase() === "SPACE DEBRIS";
-}
-
-// TODO 3a: fix isSpaceDebris check
+		DisplayWarning(): boolean {
+		return this.type.toUpperCase() === "SPACE DEBRIS";
+		}
+	}
+// TODO 3a: fix isSpaceDebris check   
