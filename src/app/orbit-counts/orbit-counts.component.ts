@@ -7,7 +7,10 @@ import { Satellite } from '../satellite';
   styleUrls: ['./orbit-counts.component.css']
 })
 export class OrbitCountsComponent implements OnInit {
-
+//o fix this, you'll need to replace the NaN string
+//  with a structural directive to indicate how many satellites are on display in the table.
+//  Like orbit-list, the orbit-counts component has access to the array of fetched 
+// satellites using an input property called satellites.
 	@Input() satellites: Satellite[];
 
   constructor() { }
