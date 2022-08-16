@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Server } from 'http';
 import { Satellite } from './satellite';
 
 @Component({

@@ -6,9 +6,6 @@
 .warning {
 	background-color: #da8a8a;
 }
-.band {
-    background-color: violet;
-}
 table {
  color: #111;
  border-radius: 5px;
@@ -16,6 +13,9 @@ table {
  margin: 12px 0;
  min-width: 300px;
  background: #dad8d8;
+}
+tr:nth-child(even) {
+	background-color: violet;
 }
 
 .header-row {
