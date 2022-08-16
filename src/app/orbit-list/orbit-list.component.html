@@ -9,7 +9,7 @@
        <th>Launch Date</th>
    </tr>
    <tr class="data-row" *ngFor = "let satellite of satellites">
-     
+     <!--structural directive to render template for every item in the table -->
        <td>{{satellite.name}}</td>
        <td [class.warning] = "satellite.isSpaceDebris()">{{satellite.type}}</td>
        <td>{{satellite.operational}}</td>
