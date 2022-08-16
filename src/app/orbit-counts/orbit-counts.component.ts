@@ -12,7 +12,7 @@ export class OrbitCountsComponent implements OnInit {
 //  Like orbit-list, the orbit-counts component has access to the array of fetched 
 // satellites using an input property called satellites.
 	@Input() satellites: Satellite[];
-	stats: string[]= ['Total', 'Space Debris', 'Communication', 'Probe', 'Positioning', 'Space Station', 'Telescope'];
+	//stats: string[]= ['Total', 'Space Debris', 'Communication', 'Probe', 'Positioning', 'Space Station', 'Telescope'];
   constructor() { }
 
   ngOnInit() {
