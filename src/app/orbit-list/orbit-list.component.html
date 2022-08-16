@@ -11,10 +11,17 @@
    <!-- TODO 2b: use *ngFor to display satellite data in the table -->
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
 
-   <tr *ngFor="let satellite of satellites; let i = index" [class.band]="i % 2 === 0">
+<!--<li *ngFor='let in of counter(5) ;let i = index'>{{i}}</li>-->
+   <tr *ngFor="let satellite of satellites; let i = index" >
+<!--Repair the isSpaceDebris method in the Satellite class. 
+isSpaceDebris returns true if the satellite type is 'Space Debris',
+ and it returns false otherwise. (&&) is conditional to use 
 
+Use isSpaceDebris to add the warning CSS class to the <td> 
+containing the satellite's type. 
+Use an Angular attribute directive to accomplish this.-->
       <td *ngFor="let property of objectKeys(satellite)" [class.warning]="satellite.DisplayWarning() && property === 'type'">
-         {{satellite[property]}}
+         {{satellite[property]}}<!--return -->
       </td>
    </tr>
 </table>
