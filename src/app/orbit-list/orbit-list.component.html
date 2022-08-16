@@ -1,7 +1,5 @@
 
 <h3>Orbit Report</h3>
-   <!-- TODO 2b: use *ngFor to display satellite data in the table -->
-<!-- TODO 3b: add style directive to conditionally highlight satellite type -->
 <table>
    <tr class="header-row">
        <th (click)="sort('name')" class="sortable">Name</th>
@@ -11,12 +9,15 @@
        <th>Launch Date</th>
    </tr>
    <tr class="data-row" *ngFor = "let satellite of satellites">
-      <td>{{satellite.name}}</td>
-        <td [class.warning] = "satellite.isSpaceDebris()">{{satellite.type}}</td>
-        <td>{{satellite.operational}}</td>
-        <td>{{satellite.orbitType}}</td>
-        <td>{{satellite.launchDate}}</td>
+     
+       <td>{{satellite.name}}</td>
+       <td [class.warning] = "satellite.isSpaceDebris()">{{satellite.type}}</td>
+       <td>{{satellite.operational}}</td>
+       <td>{{satellite.orbitType}}</td>
+       <td>{{satellite.launchDate}}</td>
+     
    </tr>
 </table>
 
-
+<!-- TODO 2b: use *ngFor to display satellite data in the table -->
+<!-- TODO 3b: add style directive to conditionally highlight satellite type -->
