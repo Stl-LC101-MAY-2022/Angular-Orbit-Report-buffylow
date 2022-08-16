@@ -13,7 +13,11 @@ export class OrbitListComponent implements OnInit {
 
   ngOnInit() {
   }
+////my.component.ts
 
+//counter(i: number) {
+ //   return new Array(i);
+//}
   objectKeys(satellite: object): string[] {
     return Object.keys(satellite);
   }
