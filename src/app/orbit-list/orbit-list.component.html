@@ -12,7 +12,8 @@
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
 
    <tr *ngFor="let satellite of satellites; let i = index" [class.band]="i % 2 === 0">
-      <td *ngFor="let property of objectKeys(satellite)" [class.warning]="satellite.shouldShowWarning() && property === 'type'">
+
+      <td *ngFor="let property of objectKeys(satellite)" [class.warning]="satellite.DisplayWarning() && property === 'type'">
          {{satellite[property]}}
       </td>
    </tr>
